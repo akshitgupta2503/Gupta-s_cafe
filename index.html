@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gupta's</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<style>
+		.caption.light h1 {
+			transition: color 0.3s ease;
+		}
+
+		.caption.light h1:hover {
+			color: yellow; 
+		}
+
+		.caption.light p {
+			transition: color 0.3s ease;
+		}
+
+		.caption.light p:hover {
+			color: yellow; 
+		}
+		.billboard.light{
+			background: url('../Gupta-s_cafe/img/homepage_pic.jpg') no-repeat;
+		}
+		.billboard .shadow{
+			background: url('../Gupta-s_cafe/img/shadow.png') repeat-x;
+		}
+		.video{
+			background: url('../Gupta-s_cafe/img/contact.jpg') no-repeat;
+		}
+	</style>
+
+</head>
+<body>
+
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#"><img class="logo" src="../Gupta-s_cafe/img/logo.png" alt="Restaurant Logo"/></a>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="">Menu</a></li>
+					<li><a href="">Karaoke/Party</a></li>
+					<li><a href="">Promotions/Events</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Welcome to Gupta's Cafe</h1>
+			<p>A Crazy place for crazy foody - Heart of Perfect Food Hangout!</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section>
+
+
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown" style="position: relative; overflow: hidden;">
+				<img class="icon" src="../Gupta-s_cafe/img/service.jpg" alt="" style="transition: transform 0.3s ease, opacity 0.3s ease; width: 100%; display: block;">
+				<span class="separator"></span>
+				<h2>Known for service</h2>
+				<p>We are committed to provide you with an exceptional dining experience every time you walk through our door.</p>
+			</li>
+			<li class="animated wow fadeInDown" data-wow-delay=".2s">
+				<img class="icon" src="../Gupta-s_cafe/img/food.jpg" alt=""/>
+				<span class="separator"></span>
+				<h2>Modern Asian Dining</h2>
+				<p>We offer authentic Chinese and Asian cuisine from the different parts of China and the Far East.
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
+				<img class="icon" src="../Gupta-s_cafe/img/taste.jpg" alt=""/>
+				<span class="separator"></span>
+				<h2>A harmonious taste</h2>
+				<p>Our chefs understand that the secret of good taste lies largely in the freshness of the ingredients and creating a harmionious combination of tastes.</p>
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="video">
+		<img class="logo" src="../Gupta-s_cafe/img/logo.png">
+		<h3 class="animated wow fadeInDown">The icing on the cake is our prompt, efficient and personalized service.</h3>
+	</section>
+
+
+	<section class="testimonials wrapper">
+		<div class="title animated wow fadeIn">
+			<h2>We have Karaoke too!</h2>
+			<h3>Apart from the mouth watering food we offer private dining rooms with Karaoke facility in every room with wide verity
+			 of songs selection. (Rooms can adequately accommodate 10 to 45 people)</h3>
+		</div>
+	</section>
+
+	<footer>
+		<div class="wrapper">
+			<div class="rights">
+				<p>All Rights Reserved 2024 - Gupta's Cafe | Developed By Akshit</p>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="">Menu</a></li>
+					<li><a href="">Karaoke/Party</a></li>
+					<li><a href="">Promotions/Events</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</footer>
+	<script>
+		document.querySelectorAll('.animated').forEach(function(element) {
+			element.addEventListener('mouseover', function() {
+				element.querySelector('img.icon').style.transform = 'scale(1.1)';
+				element.querySelector('img.icon').style.opacity = '0.8';
+			});
+			element.addEventListener('mouseout', function() {
+				element.querySelector('img.icon').style.transform = 'scale(1)';
+				element.querySelector('img.icon').style.opacity = '1';
+			});
+		});
+	</script>
+</body>
+</html>
